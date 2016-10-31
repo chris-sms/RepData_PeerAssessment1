@@ -35,7 +35,7 @@ mydata$formattedinterval<-paste(str_sub(tempinterval,1,2),str_sub(tempinterval,s
 
 ## What is mean total number of steps taken per day?
 
-This code creates a subset of data with records containing NA values omitted.  It then calculates the total number of steps taken each day, and creates a histogram.  The mean and median number of steps are computed and the mean number of steps is displayed on the historgram as a red line.
+This code creates a subset of data with records containing NA values omitted.  It then calculates the total number of steps taken each day, and creates a histogram.  The mean and median number of steps are computed and the mean number of steps is displayed on the histogram as a red line.
 
 
 ```r
@@ -71,7 +71,7 @@ The mean number of steps per day was 10766.2 and the median number of steps per 
 
 ## What is the average daily activity pattern?
 
-This code chunk calculates and plots the average number of steps taken during each time interval, averaged across all days.  It also identifies the interview which contains the highest average number of steps.
+This code chunk calculates and plots the average number of steps taken during each time interval, averaged across all days.  It also identifies the interval which contains the highest average number of steps.
 
 
 ```r

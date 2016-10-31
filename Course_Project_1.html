@@ -148,7 +148,7 @@ mydata$formattedinterval&lt;-paste(str_sub(tempinterval,1,2),str_sub(tempinterva
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>
-<p>This code creates a subset of data with records containing NA values omitted. It then calculates the total number of steps taken each day, and creates a histogram. The mean and median number of steps are computed and the mean number of steps is displayed on the historgram as a red line.</p>
+<p>This code creates a subset of data with records containing NA values omitted. It then calculates the total number of steps taken each day, and creates a histogram. The mean and median number of steps are computed and the mean number of steps is displayed on the histogram as a red line.</p>
 <pre class="r"><code># Remove NA values for this section of analysis
 mydataNoNA&lt;-na.omit(mydata)
 # Calculate the total number of steps taken per day
@@ -166,7 +166,7 @@ abline(v=mean(totalsteps$steps),col=&quot;red&quot;)</code></pre>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
-<p>This code chunk calculates and plots the average number of steps taken during each time interval, averaged across all days. It also identifies the interview which contains the highest average number of steps.</p>
+<p>This code chunk calculates and plots the average number of steps taken during each time interval, averaged across all days. It also identifies the interval which contains the highest average number of steps.</p>
 <pre class="r"><code># Calculate the average number of steps taken during each interval
 stepsbyinterval &lt;- mydataNoNA %&gt;% group_by(interval,formattedinterval) %&gt;% summarise(steps = mean(steps))
 # Plot the histogram
